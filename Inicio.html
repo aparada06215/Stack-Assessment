@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos al portal estudiantil</title>
+    <link rel="stylesheet" href="css/miestilo.css" />
+    <script type="text/javascript" src="js/firstLoad.js"></script>
+    <script type="text/javascript" src="js/signUp.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+  </head>
+  <body>
+    <div>
+      <div id="titulo">
+        <h1>PORTAL ESTUDIANTIL STACK ASSESSMENT</h1>
+      </div>
+
+      <div style="text-align: center">
+        <aside>
+          <section class="form_ingreso">
+            <h2>HOLA</h2>
+            <p id="resaltar">BIENVENIDO</p>
+            <form name="log" id="log" method="GET" autocomplete="on">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ingrese su Email"
+                autofocus
+              />
+              <input
+                type="password"
+                name="Password"
+                id="password"
+                placeholder="Ingrese su Password"
+              />
+              <input
+                onclick="ingreso()"
+                type="button"
+                value="Ingresar"
+                id="signin"
+              />
+              <input
+                onclick="signUp()"
+                type="button"
+                value="Registrar"
+                id="signup"
+              />
+            </form>
+          </section>
+        </aside>
+        <p id=" -login"></p>
+        <nav id="navbar">
+          <ul>
+            <li>
+              <em>
+                <a href="Asignaturas.html" target="_blank"
+                  >Asignaturas a mejorar</a
+                >
+              </em>
+            </li>
+            <li>
+              <em> <a href="Notas.html" target="_blank">Notas</a> </em>
+            </li>
+            <li>
+              <em>
+                <a href="Rendimiento.html" target="_blank"
+                  >Curva de rendimiento</a
+                >
+              </em>
+            </li>
+            <li>
+              <em>
+                <a href="Evaluaciones.html" target="_blank">Evaluaciones</a>
+              </em>
+            </li>
+          </ul>
+        </nav>
+        <br />
+      </div>
+
+      <br /><img src="img/Imagen1.webp" alt="Texto alterno" /><br />
+      <h2 class="Titulo">¿Que es Stack assessment?</h2>
+      <br />
+      <i
+        ><b
+          >Es un mecanismo auto-evaluatorio que permite la mejora del
+          aprendizaje de las asignaturas en las que tengan fallas los
+          estudiantes.</b
+        ></i
+      >
+    </div>
+    <br />
+
+    <br />
+    <footer>
+      <strong
+        >Autores: Diana Katherine Romero Melo, William Fernando Vanegas Munevar,
+        Andres Enrique Parada Quintero, Andres Felipe Prada Rondon</strong
+      >
+      <address>
+        <a href="https://universidadean.edu.co/">Universidad EAN</a>
+      </address>
+      <h2>Guia 2 desarrollo web Universidad EAN</h2>
+
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!"
+          />
+        </a>
+      </p>
+
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="¡CSS Válido!"
+          />
+        </a>
+      </p>
+    </footer>
+    <br />
+    <script type="text/javascript">
+      load();
+    </script>
+  </body>
+</html>
