@@ -6,81 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienvenidos al portal estudiantil</title>
     <link rel="stylesheet" href="css/miestilo.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="js/firstLoad.js"></script>
     <script type="text/javascript" src="js/signUp.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/cerrarSesion.js"></script>
   </head>
   <body>
-    <div>
-      <div id="titulo">
-        <h1>PORTAL ESTUDIANTIL STACK ASSESSMENT</h1>
-      </div>
-
-      <div style="text-align: center">
-        <aside>
-          <section class="form_ingreso">
-            <h2>HOLA</h2>
-            <p id="resaltar">BIENVENIDO</p>
-            <form name="log" id="log" method="GET" autocomplete="on">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Ingrese su Email"
-                autofocus
-              />
-              <input
-                type="password"
-                name="Password"
-                id="password"
-                placeholder="Ingrese su Password"
-              />
-              <input
-                onclick="ingreso()"
-                type="button"
-                value="Ingresar"
-                id="signin"
-              />
-              <input
-                onclick="signUp()"
-                type="button"
-                value="Registrar"
-                id="signup"
-              />
-            </form>
-          </section>
-        </aside>
-        <p id="before-login"></p>
-        <nav id="navbar">
-          <ul>
-            <li>
-              <em>
-                <a href="Asignaturas.html" target="_blank"
-                  >Asignaturas a mejorar</a
-                >
-              </em>
-            </li>
-            <li>
-              <em> <a href="Notas.html" target="_blank">Notas</a> </em>
-            </li>
-            <li>
-              <em>
-                <a href="Rendimiento.html" target="_blank"
-                  >Curva de rendimiento</a
-                >
-              </em>
-            </li>
-            <li>
-              <em>
-                <a href="Evaluaciones.html" target="_blank">Evaluaciones</a>
-              </em>
-            </li>
-          </ul>
-        </nav>
-        <br />
-      </div>
-
-      <br /><img src="img/Imagen1.webp" alt="Texto alterno" /><br />
+    <div id="titulo">
+      <h1>PORTAL ESTUDIANTIL STACK ASSESSMENT</h1>
+    </div>
+    <div style="text-align: center">
+      <p id="before-login"></p>
+      <aside>
+        <section class="form_ingreso">
+          <p id="resaltar">BIENVENIDO</p>
+          <form name="log" id="log" method="GET" autocomplete="on">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ingrese su Email"
+              autofocus
+            />
+            <input
+              type="password"
+              name="Password"
+              id="password"
+              placeholder="Ingrese su Password"
+            />
+            <input
+              onclick="ingreso()"
+              type="button"
+              value="Ingresar"
+              id="signin"
+            />
+            <input
+              onclick="signUp()"
+              type="button"
+              value="Registrar"
+              id="signup"
+            />
+          </form>
+          <button id="cerrar-sesion" type="button" onclick="cerrarSesion()">
+            Cerrar Sesión
+          </button>
+        </section>
+      </aside>
+      <nav id="navbar">
+        <ul>
+          <li>
+            <em>
+              <a href="Asignaturas.html" target="_blank"
+                >Asignaturas a mejorar</a
+              >
+            </em>
+          </li>
+          <li>
+            <em> <a href="Notas.html" target="_blank">Notas</a> </em>
+          </li>
+          <li>
+            <em>
+              <a href="Rendimiento.html" target="_blank"
+                >Curva de rendimiento</a
+              >
+            </em>
+          </li>
+          <li>
+            <em>
+              <a href="Evaluaciones.html" target="_blank">Evaluaciones</a>
+            </em>
+          </li>
+        </ul>
+      </nav>
+      <br />
+    </div>
+    <div id="main-content">
+      <br /><img id="hero" src="img/Imagen1.webp" alt="Texto alterno" /><br />
       <h2 class="Titulo">¿Que es Stack assessment?</h2>
       <br />
       <i
@@ -91,6 +93,7 @@
         ></i
       >
     </div>
+
     <br />
 
     <br />

@@ -6,9 +6,10 @@ const ingreso = () => {
       isLogin = true;
       document.getElementById("before-login").innerHTML = "";
       document.getElementById("navbar").style.display = "block";
+      document.getElementById("cerrar-sesion").style.display = "block";
     }
   }
   if (!isLogin) {
-    alert("password no valido");
+    Swal.fire("password no valido");
   }
 };
