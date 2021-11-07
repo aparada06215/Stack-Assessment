@@ -10,6 +10,7 @@ const signUp = () => {
   var passwordSignUp = document.getElementById("password").value;
 
   if (validateEmail(emailSignUp) && passwordSignUp) {
+    const users = Array.from(JSON.parse(localStorage.getItem("users")));
     users.push(newUser(emailSignUp, passwordSignUp));
     localStorage.setItem("users", JSON.stringify(users));
     Swal.fire({
@@ -19,7 +20,9 @@ const signUp = () => {
       showConfirmButton: false,
       timer: 1500,
     });
-    ingreso();
+    document.getElementById("before-login").innerHTML = "";
+    document.getElementById("navbar").style.display = "block";
+    document.getElementById("sign-out").style.display = "block";
   } else if (!emailSignUp) {
     Swal.fire({
       icon: "error",
@@ -32,7 +35,7 @@ const signUp = () => {
       title: "Oops...",
       text: "password no puede ser vacio",
     });
-  } else {
+  } else if (!validateEmail(emailSignUp)) {
     Swal.fire({
       icon: "error",
       title: "Oops...",

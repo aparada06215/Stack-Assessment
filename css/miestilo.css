@@ -96,12 +96,11 @@ aside {
   margin: 10px 0;
 }
 
-#cerrar-sesion {
+#sign-out {
   background: none;
   color: blue;
   border: none;
   padding: 10px 5px;
-  /* font: inherit; */
   cursor: pointer;
   font-size: 15px;
 }

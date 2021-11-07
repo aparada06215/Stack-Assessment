@@ -9,8 +9,8 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="js/firstLoad.js"></script>
     <script type="text/javascript" src="js/signUp.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
-    <script type="text/javascript" src="js/cerrarSesion.js"></script>
+    <script type="text/javascript" src="js/signIn.js"></script>
+    <script type="text/javascript" src="js/signOut.js"></script>
   </head>
   <body>
     <div id="titulo">
@@ -26,17 +26,17 @@
               type="email"
               name="email"
               id="email"
-              placeholder="Ingrese su Email"
+              placeholder=" Ingrese su Email"
               autofocus
             />
             <input
               type="password"
               name="Password"
               id="password"
-              placeholder="Ingrese su Password"
+              placeholder=" Ingrese su Password"
             />
             <input
-              onclick="ingreso()"
+              onclick="signIn()"
               type="button"
               value="Ingresar"
               id="signin"
@@ -48,7 +48,7 @@
               id="signup"
             />
           </form>
-          <button id="cerrar-sesion" type="button" onclick="cerrarSesion()">
+          <button id="sign-out" type="button" onclick="signOut()">
             Cerrar Sesión
           </button>
         </section>
