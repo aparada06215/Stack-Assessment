@@ -1,0 +1,6 @@
+CRITICAL - 2021-11-23 17:04:35 --> Undefined constant "App\Models\is_unique"
+#0 C:\xampp\htdocs\StackAssessmentV1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\StackAssessmentV1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\StackAssessmentV1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\StackAssessmentV1\index.php(40): CodeIgniter\CodeIgniter->run()
+#4 {main}
